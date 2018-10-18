@@ -173,7 +173,13 @@ repos:
 
 ## Wrapping Up
 
-Need to set up something custom that isn't covered by [an existing pre-commit hook](https://pre-commit.com/#pre-commit-configyaml---hooks)?
+Pre-commit is extremely flexible and relatively easy to set up on your project.
+It has a small learning curve, but if you can manage to get through it, then you
+can automatically enforce a huge amount of rules on your codebase. Use it for
+everything from linting, auto-formatting, validation, and just about anything
+else you might want to automate.
+
+Need to set up something custom that isn't covered by [an existing pre-commit hook](https://pre-commit.com/hooks.html)?
 Check out [pre-commit's demo repository](https://github.com/pre-commit/demo-repo/blob/master/.pre-commit-config.yaml)
 for some examples that might be useful in creating your own hooks that
 pre-commit can run to do something more unique for your needs.
