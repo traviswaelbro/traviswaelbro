@@ -153,10 +153,17 @@ by including an `args` property in your `hooks` call, such as:
       args: [--myarg1=1, --myarg1=2]
 ```
 
-> When you next run pre-commit, your script will be called:
-> `path/to/script-or-system-exe --myarg1=1 --myarg1=2 dir/file1 dir/file2 file3`
-> If the args property is empty or not defined, your script will be called:
-> `path/to/script-or-system-exe dir/file1 dir/file2 file3`
+When you next run pre-commit, your script will be called:
+
+```
+path/to/script-or-system-exe --myarg1=1 --myarg1=2 dir/file1 dir/file2 file3
+```
+
+If the args property is empty or not defined, your script will be called:
+
+```
+path/to/script-or-system-exe dir/file1 dir/file2 file3
+```
 
 Here's an intermediate example of a commit-only hook that will reject an
 attempted commit if it doesn't pass `docformatter`:
