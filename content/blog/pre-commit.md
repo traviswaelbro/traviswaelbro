@@ -190,3 +190,5 @@ Need to set up something custom that isn't covered by [an existing pre-commit ho
 Check out [pre-commit's demo repository](https://github.com/pre-commit/demo-repo/blob/master/.pre-commit-config.yaml)
 for some examples that might be useful in creating your own hooks that
 pre-commit can run to do something more unique for your needs.
+
+<a href="https://twitter.com/intent/tweet?text=Using pre-commit to Automate Git Hooks&url=https%3A%2F%2Ftraviswaelbro.github.io%2Fblogs%2Fpre-commit%2F" target="_blank" class="twitter-button">Tweet</a>
