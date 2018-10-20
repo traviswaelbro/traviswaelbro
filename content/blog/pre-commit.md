@@ -3,10 +3,6 @@ title: "Using pre-commit to Automate Git Hooks"
 date: 2018-10-18
 ---
 
-_**Note**: This heavily references the pre-commit documentation, but it is by no means a
-comprehensive overview of everything that pre-commit can do. Check out
-[the pre-commit website](https://pre-commit.com) to find out more for yourself._
-
 ## What is pre-commit?
 
 > pre-commit is a framework for managing and maintaining multi-language pre-commit hooks.
@@ -14,18 +10,13 @@ comprehensive overview of everything that pre-commit can do. Check out
 Basically, [pre-commit](https://pre-commit.com) is a Python package that
 provides a maintainable way to manage your git hooks. Git hooks allow you to run
 _some code (or commands)_ on certain git events, such as before and after
-commits, before and after pushes, and more.
+commits, before and after pushes, and more. Use it to automate validation,
+linting, and more to keep your codebase in check before things even hit the git
+server.
 
-_**Note:** pre-commit uses the term "hooks" to mean "run the piece of code that matches
-the hook's `id`". In all cases below, I will be using "hooks" to mean the same._
-
-Pre-commit itself supports just a few git hooks at this time, but it is a very
-powerful tool that can automate a lot of your validation, linting, and more to
-keep your codebase in check before things even hit the git server.
-
-The pre-commit package has [many pre-defined hooks](https://pre-commit.com/hooks.html)
-that you can add to your repository to have it take care of the grunt work for
-you.
+_**Note**: This heavily references the pre-commit documentation, but it is by no means a
+comprehensive overview of everything that pre-commit can do. Check out
+[the pre-commit website](https://pre-commit.com) to find out more for yourself._
 
 ## How do I use it?
 
@@ -97,6 +88,10 @@ repos:
     hooks:
     - id: jshint
 ```
+
+The pre-commit package has [many pre-defined hooks](https://pre-commit.com/hooks.html)
+that you can add to your repository to have it take care of the grunt work for
+you.
 
 #### Confining hooks to run at certain stages
 

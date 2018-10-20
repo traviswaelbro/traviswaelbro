@@ -2,3 +2,7 @@
 	path = public
 	url = git@github.com:traviswaelbro/traviswaelbro.github.io.git
 	branch = master
+[submodule "gohugo-theme-ananke"]
+	path = themes/gohugo-theme-ananke
+	url = git@github.com:traviswaelbro/gohugo-theme-ananke.git
+	branch = master
