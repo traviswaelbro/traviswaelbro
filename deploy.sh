@@ -7,6 +7,7 @@ hugo # -t gohugo-theme-ananke
 
 # Go To Public folder
 cd public
+
 # Add changes to git.
 git add .
 
